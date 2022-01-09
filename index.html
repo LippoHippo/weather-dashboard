@@ -16,9 +16,9 @@
     <main class="d-flex justify-content-around m-4">
         <div class="flex-column col-3">
             <h2 class="fs-2 fw-bold">Search for a City:</h2>
-            <form id="border-bottom user-location" class="mb-3 "> 
+            <form id="user-location" class="mb-3 form-border-bottom"> 
 
-                <input name="username" id="username" placeholder="eg. San Diego" type="text" autofocus="true" 
+                <input name="username" id="username" placeholder="eg. Coon Rapids" type="text" autofocus="true" 
                 class="form-control text-center fs-3 mt-3" />
 
                 <button type="submit" 
@@ -27,12 +27,13 @@
                 </button>
 
             </form>
-            <div></div>
+            <div id="repos-container" class="list-group"></div>
         </div>
 
         <div class="flex-column col-9"></div>
 
     </main>
+<script src="./assets/js/locations.js"></script>
 <script src="./assets/js/script.js"></script>
 </body>
 </html>
