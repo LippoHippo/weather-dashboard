@@ -1,7 +1,7 @@
-var repoContainerEl = document.querySelector("#repos-container");
-var repoSearchTerm = document.querySelector("#repo-search-term");
-var userLocationEl = document.querySelector("#user-location");
-var locationInputEl = document.querySelector("#username");
+var repoContainerEl = document.querySelector ("#repos-container");
+var repoSearchTerm  = document.querySelector("#repo-search-term");
+var userLocationEl  = document.querySelector   ("#user-location");
+var locationInputEl = document.querySelector        ("#username");
 
 var getLocationRepos = function(timezone) {
     var apiUrl = "https//api.openweathermap.org/data/2.5/onecall?" + timezone + "&appid=";
@@ -11,7 +11,7 @@ var getLocationRepos = function(timezone) {
             if(response.ok) {
                 console.log(response);
                 response.json().then(function(data){
-                    displayLocation();
+                    displayLocation(data);
                 });
             } else {
                 alert ("Error: Location not found. Please try again");
