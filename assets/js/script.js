@@ -1,8 +1,9 @@
+/* Global varibles used for both js files */
 var repoContainerEl = document.querySelector ("#repos-container");
 var repoSearchTerm  = document.querySelector("#repo-search-term");
 var userLocationEl  = document.querySelector   ("#user-location");
 var locationInputEl = document.querySelector        ("#username");
-
+/* call api inputed into function */
 var getLocationRepos = function(timezone) {
     var apiUrl = "https//api.openweathermap.org/data/2.5/onecall?" + timezone + "&appid=";
 
@@ -21,7 +22,7 @@ var getLocationRepos = function(timezone) {
             alert("Unable to connect to server");
         });
 };
-
+/* Registers if a location was inputed */
 var formSubmitHandler = function(event) {
     event.preventDefault();
     var location = locationInputEl.value.trim();

@@ -1,3 +1,4 @@
+/* Global varibles used for both js files */
 var repoContainerEl = document.querySelector ("#repos-container");
 var repoSearchTerm  = document.querySelector("#repo-search-term");
 var userLocationEl  = document.querySelector   ("#user-location");
