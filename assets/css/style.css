@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+#border-bottom {
+    border-bottom: solid 3px;
+    border-color: gray;
+}
